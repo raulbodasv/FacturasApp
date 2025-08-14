@@ -1,8 +1,9 @@
+# FacturasApp
 
-#Levantar docker de Postgresql
+### Levantar docker de Postgresql
 docker run --name facturasPostgreSQL -e POSTGRES_PASSWORD=admin1001 -p 5432:5432 -d postgres
 
-#Creacion de tabla facturas en bbdd
+### Creacion de tabla facturas en bbdd
 	
 	CREATE TABLE public.facturas (
 		id varchar(255) NOT NULL,
@@ -25,5 +26,6 @@ docker run --name facturasPostgreSQL -e POSTGRES_PASSWORD=admin1001 -p 5432:5432
 		fecha_creacion timestamp NULL,
 		CONSTRAINT facturas_pkey PRIMARY KEY (id)
 	);
+
 
 
